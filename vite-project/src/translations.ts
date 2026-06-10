@@ -1,12 +1,12 @@
 export const translations = {
   en: {
-    title: "Portfolio VERHUST Vincent",
+    title: "Portfolio Radolaza LEONDARIS",
     about: "Bio",
     project: "Projects",
-    aboutText: `Hi, I’m Vincent.
-💼 Tech enthusiast | Lifelong learner
-I specialize in Cybersecurity and thrive on tackling complex tech challenges.
-Passionate about technology, I enjoy dynamic environments and collaborative teams where everyone can learn and grow together.
+    aboutText: `Hi, I’m Radolaza.
+💼 Cybersecurity Master's student | Blue Team oriented
+I specialize in GRC (Governance, Risk, and Compliance) and thrive on defending systems and strategic security compliance.
+Passionate about technology, I enjoy dynamic environments and collaborative teams.
 🌎 Open to opportunities and meaningful collaborations.`,
     language_spoken: "English, French",
     hire: "Available for hire",
@@ -17,16 +17,18 @@ Passionate about technology, I enjoy dynamic environments and collaborative team
     title_p4: "Airbnb Paris Project",
     title_p5: "TheLook eCommerce Project",
     title_p6: "Real Estate Profitability Project",
-    title_p7: "Elden Ring Optimization via Data Analyis",
+    title_p7: "Elden Ring Optimization via Data Analysis",
+    title_p10: "PentestIT - WordPress Cyber-Maturity Plugin",
+    title_p11: "Internal Cyber Lab - SOC & Pentest Infrastructure",
   },
   fr: {
-    title: "Portfolio VERHUST Vincent",
+    title: "Portfolio Radolaza LEONDARIS",
     about: "Bio",
     project: "Projets",
-    aboutText: `Bonjour, je m'appelle Vincent.
-💼 Passionné de tech | En quête constante d'apprentissage
-Je suis spécialisé en cybersécurité et j'aime relever des défis technologiques complexes.
-Passionné de technologie, j'apprécie les environnements dynamiques et les équipes collaboratives où chacun peut apprendre et évoluer ensemble.
+    aboutText: `Bonjour, je m'appelle Radolaza.
+💼 Étudiant en Master Cybersécurité | Orienté Blue Team
+Je suis spécialisé en GRC (Gouvernance, Risque et Conformité) et j'aime relever des défis stratégiques en cybersécurité.
+Passionate about technology, I enjoy dynamic environments and collaborative teams.
 🌎 Ouvert aux opportunités et aux collaborations enrichissantes.`,
     language_spoken: "Anglais, Français",
     hire: "Disponible à l'embauche",
@@ -38,5 +40,7 @@ Passionné de technologie, j'apprécie les environnements dynamiques et les équ
     title_p5: "TheLook eCommerce Project",
     title_p6: "Projet Rentabilité Immobilière",
     title_p7: "Elden Ring Optimisation via l'analyse de données",
+    title_p10: "PentestIT - Plugin WordPress de Cyber-Maturité",
+    title_p11: "Cyber Lab Interne - Infrastructure SOC & Pentest",
   }
 };

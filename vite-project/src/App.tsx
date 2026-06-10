@@ -18,6 +18,8 @@ import Project6 from "./pages_projets/project6";
 import Project7 from "./pages_projets/project7"; 
 import Project8 from "./pages_projets/project8";
 import Project9 from "./pages_projets/project9";
+import Project10 from "./pages_projets/project10";
+import Project11 from "./pages_projets/project11";
 
 const App: React.FC = () => {
   const Home: React.FC = () => {
@@ -25,12 +27,14 @@ const App: React.FC = () => {
 
     const translations = {
       fr: {
-        header_title: "Radolaza Leondaris Portfolio",
-        aboutText: `Bonjour, je m'appelle Leo.
+        header_title: "Portfolio Radolaza Leondaris",
+        aboutText: `Bonjour, je m'appelle Radolaza.
                   💼
-                  Je suis spécialisé en reseau et cybersécurité et j'aime relever des défis technologiques complexes.
+                  Ingénieur Réseaux de formation avec 2 ans d'expérience chez Orange, j'y ai découvert ma véritable passion pour la cybersécurité. 
+                  C'est en travaillant sur des infrastructures critiques que j'ai réalisé à quel point le moindre détail peut être décisif pour la sécurité d'un système.
+                  Actuellement en Master Cybersécurité, je suis orienté Blue Team avec une forte aspiration pour la Gouvernance (GRC).
                   🌎 
-                  Ouvert aux opportunités d'alternance et de stage en cyberecurité.
+                  Passionné par la défense des systèmes et la mise en conformité stratégique.
                   `,
         projectTitles: [
           "Projet Nginx",
@@ -38,19 +42,49 @@ const App: React.FC = () => {
           "Projet Sécurité des Réseaux & Pare-feu",
           "Airbnb Paris Project",
           "TheLook eCommerce Project",
-          "Troisieme place mondiale pour la competition de robotique First Global Challenge 2020",
+          "Troisième place mondiale pour la compétition de robotique First Global Challenge 2020",
           "Elden Ring Optimisation via l'analyse de données",
           "Site web de ma startup HearMe",
           "Site web de ma startup TechCare",
+          "PentestIT - Plugin WordPress de Cyber-Maturité",
+          "Cyber Lab Interne - Infrastructure SOC & Pentest",
+        ],
+        certifications: [
+          "CISCO CCNA",
+          "CISCO Introduction to cybersecurity",
+          "Google cloud cybersecurity certificate",
+          "AWS Cloud practitioner",
+          "DALF C1 (Français)",
+          "Advanced level certificate (English)",
+        ],
+        achievements: [
+          { platform: "Root-Me", detail: "Expert en exploitation et web" },
+          { platform: "TryHackMe", detail: "Spécialisation SOC & Blue Team" },
+        ],
+        cert_title: "Mes Certifications",
+        achieve_title: "Achevèment & Rankings",
+        email_label: "Contactez-moi :",
+        email: "radolazaleondaris@gmail.com",
+        skills_title: "Compétences Techniques",
+        skills: [
+          { category: "SOC & Détection", items: ["SIEM (Wazuh, ELK Stack)", "EDR (Bitdefender)", "Sigma, YARA", "Qualification d’alertes", "Analyse de logs", "MITRE ATT&CK"] },
+          { category: "Normes & Réglementations", items: ["NIS2", "ISO 27001", "EBIOS", "RGPD", "CIS"] },
+          { category: "Réponse à Incident & SOAR", items: ["Playbooks (n8n, Ansible)", "Fiches réflexes", "Orchestration"] },
+          { category: "Threat Hunting & CTI", items: ["Analyse de TTPs", "Extraction d’indicateurs", "Veille CVE", "Dark web monitoring"] },
+          { category: "Scripting & Automatisation", items: ["Python, Bash, PowerShell", "Automatisation de contrôles", "AWS Lambda"] },
+          { category: "Réseaux & Sécurité", items: ["Cisco, VLAN, VPN", "pfSense, SD-WAN", "Palo Alto/Stormshield"] },
+          { category: "Systèmes", items: ["Linux", "Windows Server", "macOS"] },
         ],
       },
       en: {
         header_title: "Radolaza Leondaris Portfolio",
-        aboutText: `Hi, I’m Leo.
+        aboutText: `Hi, I’m Radolaza.
                     💼
-                    I specialize in network and Cybersecurity and thrive on tackling complex tech challenges.
+                    Formerly a Network Engineer with 2 years of experience at Orange, I discovered my true passion for cybersecurity there. 
+                    Working on critical infrastructures made me realize how even the smallest detail can be decisive for system security.
+                    Currently a Cybersecurity Master's student, I am Blue Team oriented with a strong focus on Governance, Risk, and Compliance (GRC).
                     🌎 
-                    Open to opportunities of internship and aprentship.
+                    Passionate about defending systems and strategic security compliance.
                     `,
         projectTitles: [
           "Nginx Project",
@@ -62,6 +96,34 @@ const App: React.FC = () => {
           "Elden Ring Optimization via Data Analysis",
           "Website for my startup HearMe",
           "Website for my startup TechCare",
+          "PentestIT - WordPress Cyber-Maturity Plugin",
+          "Internal Cyber Lab - SOC & Pentest Infrastructure",
+        ],
+        certifications: [
+          "CISCO CCNA",
+          "CISCO Introduction to cybersecurity",
+          "Google cloud cybersecurity certificate",
+          "AWS Cloud practitioner",
+          "DALF C1 (French)",
+          "Advanced level certificate (English)",
+        ],
+        achievements: [
+          { platform: "Root-Me", detail: "Expert in exploitation and web" },
+          { platform: "TryHackMe", detail: "SOC & Blue Team specialization" },
+        ],
+        cert_title: "My Certifications",
+        achieve_title: "Achievements & Rankings",
+        email_label: "Contact me:",
+        email: "radolazaleondaris@gmail.com",
+        skills_title: "Technical Skills",
+        skills: [
+          { category: "SOC & Detection", items: ["SIEM (Wazuh, ELK Stack)", "EDR (Bitdefender)", "Sigma, YARA", "Alert qualification", "Log analysis", "MITRE ATT&CK"] },
+          { category: "Standards & Regulations", items: ["NIS2", "ISO 27001", "EBIOS", "GDPR", "CIS"] },
+          { category: "Incident Response & SOAR", items: ["Playbooks (n8n, Ansible)", "Response sheets", "Orchestration"] },
+          { category: "Threat Hunting & CTI", items: ["TTPs analysis", "IOC extraction", "CVE monitoring", "Dark web monitoring"] },
+          { category: "Scripting & Automation", items: ["Python, Bash, PowerShell", "Control automation", "AWS Lambda"] },
+          { category: "Networks & Security", items: ["Cisco, VLAN, VPN", "pfSense, SD-WAN", "Palo Alto/Stormshield"] },
+          { category: "Systems", items: ["Linux", "Windows Server", "macOS"] },
         ],
       },
     };
@@ -77,6 +139,10 @@ const App: React.FC = () => {
     '/img/project5.png',
     '/img/project6.png',
     '/img/project7.png',
+    '/img/wip.png',
+    '/img/wip.png',
+    '/img/wip.png',
+    '/img/wip.png',
   ];
 
   // Génération des liens des projets pour le menu projets 
@@ -157,11 +223,13 @@ const App: React.FC = () => {
 <div
   style={{
     width: '100%',
-    height: '600px',
+    minHeight: '600px',
     position: 'relative',
     display: 'flex',
+    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    padding: '2rem',
   }}
 >
   {/* Particles en background */}
@@ -187,76 +255,29 @@ const App: React.FC = () => {
     />
   </div>
 
-  {/* Conteneur PixelTransition */}
-  <div
-    style={{
-      position: 'relative',
-      zIndex: 1,
-      width: '300px',
-      height: '300px',
-    }}
-  >
-    {/* Texte BIO centré sur l'image */}
-<h2
-  style={{
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    color: '#ffffff',
-    fontSize: '2rem',
-    fontWeight: 'bold',
-    WebkitTextStroke: '2px red',
-    textShadow:
-      '2px 2px 0rgb(43, 0, 255), -2px 2px 0rgb(0, 26, 255), 2px -2px 0 #ff0000, -2px -2px 0 #ff0000',
-    zIndex: 2,
-    pointerEvents: 'none',
-    cursor: 'default',
-  }}
-  className="bio-text-animated"
->
-  BIO
-</h2>
-
-    {/* PixelTransition */}
-    <PixelTransition
-      firstContent={
-        <img
-          src="./img/pp.png"
-          alt="Profile Picture"
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-        />
-      }
-      secondContent={
-  <div
-    style={{
-      width: "100%",
-      height: "100%",
-      display: "grid",
-      placeItems: "center",
-      backgroundColor: "black",
-      padding: "1rem",
-    }}
-  >
-    <div
-      style={{
-        fontWeight: 900,
-        fontSize: "1rem",
-        color: "#ffffff",
-        textAlign: "center",
-      }}
-    >
-      {t.aboutText.split("\n").map((line, index) => (
-        <p key={index}>{line}</p>
-      ))}
+  <div style={{ zIndex: 1, display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '4rem', maxWidth: '1200px' }}>
+    {/* Image de profil */}
+    <div style={{ width: '300px', height: '300px', borderRadius: '50%', overflow: 'hidden', border: '4px solid white', boxShadow: '0 0 20px rgba(255,255,255,0.5)' }}>
+      <img src="./img/pp.png" alt="Profile" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
     </div>
-  </div>
-}
-      gridSize={12}
-      pixelColor="#ffffff"
-      animationStepDuration={0.4}
-      className="custom-pixel-card"
-    />
+
+    {/* Bio et Email */}
+    <div style={{ flex: '1', minWidth: '300px', color: 'white', textAlign: 'left' }}>
+      <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem', fontWeight: 'bold', borderBottom: '2px solid red', display: 'inline-block' }}>BIO</h2>
+      <div style={{ fontSize: '1.2rem', lineHeight: '1.6', marginBottom: '2rem' }}>
+        {t.aboutText.split("\n").map((line, index) => (
+          <p key={index} style={{ margin: '0.5rem 0' }}>{line}</p>
+        ))}
+      </div>
+      
+      <div style={{ backgroundColor: 'rgba(255,255,255,0.1)', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.2)' }}>
+        <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', color: '#ff0000' }}>{t.email_label}</h3>
+        <a href={`mailto:${t.email}`} style={{ fontSize: '1.3rem', color: 'white', textDecoration: 'none', fontWeight: 'bold' }}>
+          <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: '10px' }} />
+          {t.email}
+        </a>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -291,6 +312,57 @@ const App: React.FC = () => {
 </div>
 
 
+
+<br />
+<br />
+
+<section id="skills" style={{ padding: "4rem 2rem", color: "white", textAlign: "center", backgroundColor: "rgba(0,0,0,0.3)" }}>
+  <h2 style={{ fontSize: "3rem", marginBottom: "3rem", textTransform: 'uppercase', letterSpacing: '4px' }}>{t.skills_title}</h2>
+  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "2rem", maxWidth: "1400px", margin: "0 auto" }}>
+    {t.skills.map((skill, index) => (
+      <div key={index} style={{ padding: "2rem", border: "1px solid rgba(255,0,0,0.3)", borderRadius: "15px", backgroundColor: "rgba(255,255,255,0.05)", textAlign: 'left', transition: 'transform 0.3s ease', cursor: 'default' }}
+           onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-10px)'}
+           onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+        <h3 style={{ fontSize: "1.4rem", color: "#ff0000", marginBottom: "1.5rem", borderLeft: '4px solid #ff0000', paddingLeft: '1rem' }}>{skill.category}</h3>
+        <ul style={{ listStyle: 'none', padding: 0 }}>
+          {skill.items.map((item, i) => (
+            <li key={i} style={{ fontSize: "1.1rem", marginBottom: "0.5rem", display: 'flex', alignItems: 'center' }}>
+              <span style={{ color: '#ff0000', marginRight: '10px' }}>▹</span> {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section>
+
+<br />
+<br />
+
+<section id="certifications" style={{ padding: "2rem", color: "white", textAlign: "center" }}>
+  <h2 style={{ fontSize: "2.5rem", marginBottom: "2rem", textDecoration: "underline" }}>{t.cert_title}</h2>
+  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "2rem", maxWidth: "1000px", margin: "0 auto" }}>
+    {t.certifications.map((cert, index) => (
+      <div key={index} style={{ padding: "1.5rem", border: "1px solid #ffffff", borderRadius: "10px", backgroundColor: "rgba(255,255,255,0.1)" }}>
+        <h3 style={{ fontSize: "1.2rem" }}>{cert}</h3>
+      </div>
+    ))}
+  </div>
+</section>
+
+<br />
+
+<section id="achievements" style={{ padding: "2rem", color: "white", textAlign: "center" }}>
+  <h2 style={{ fontSize: "2.5rem", marginBottom: "2rem", textDecoration: "underline" }}>{t.achieve_title}</h2>
+  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "2rem", maxWidth: "1000px", margin: "0 auto" }}>
+    {t.achievements.map((ach, index) => (
+      <div key={index} style={{ padding: "1.5rem", border: "1px solid #ffffff", borderRadius: "10px", backgroundColor: "rgba(255,255,255,0.1)", display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <h3 style={{ fontSize: "1.5rem", color: "#ff0000" }}>{ach.platform}</h3>
+        <p style={{ fontSize: "1.1rem", marginTop: "0.5rem" }}>{ach.detail}</p>
+      </div>
+    ))}
+  </div>
+</section>
 
 <br />
 <br />
@@ -340,10 +412,41 @@ const App: React.FC = () => {
   </section>
 */}
 
-          {/* section projets avec FlowingMenu */}
-          <section id="projects">
-            <div style={{ height: '600px', position: 'relative' }}>
-              <FlowingMenu items={demoItems} />
+          {/* section projets avec Grid Layout */}
+          <section id="projects" style={{ padding: '4rem 2rem', color: 'white' }}>
+            <h2 style={{ fontSize: "3rem", marginBottom: "3rem", textAlign: 'center', textTransform: 'uppercase', letterSpacing: '4px' }}>{lang === 'fr' ? 'Mes Projets' : 'My Projects'}</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2.5rem', maxWidth: '1400px', margin: '0 auto' }}>
+              {demoItems.map((item, i) => (
+                <a key={i} href={item.link} style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <GlareHover
+                    width="100%"
+                    height="450px"
+                    background={`url(${item.image}) center/cover no-repeat`}
+                    borderRadius="20px"
+                    glareColor="#ffffff"
+                    glareOpacity={0.2}
+                    transitionDuration={800}
+                  >
+                    <div style={{
+                      width: '100%',
+                      height: '100%',
+                      backgroundColor: 'rgba(0,0,0,0.6)',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'flex-end',
+                      padding: '2rem',
+                      borderRadius: '20px',
+                      transition: 'background-color 0.3s ease',
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(0,0,0,0.3)'}
+                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(0,0,0,0.6)'}
+                    >
+                      <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'white', marginBottom: '0.5rem' }}>{item.text}</h3>
+                      <div style={{ width: '40px', height: '4px', backgroundColor: '#ff0000' }}></div>
+                    </div>
+                  </GlareHover>
+                </a>
+              ))}
             </div>
           </section>
 
@@ -417,7 +520,7 @@ const App: React.FC = () => {
 
     {/* Email */}
     <a
-      href="mailto:radolazaleondaris@gmail.com"
+      href={`mailto:${t.email}`}
       target="_blank"
       rel="noopener noreferrer"
       style={{ display: 'flex' }}
@@ -458,6 +561,8 @@ const App: React.FC = () => {
         <Route path="/project7" element={<Project7 />} />
         <Route path="/project8" element={<Project8 />} />
         <Route path="/project9" element={<Project9 />} />
+        <Route path="/project10" element={<Project10 />} />
+        <Route path="/project11" element={<Project11 />} />
       </Routes>
     );
   };
