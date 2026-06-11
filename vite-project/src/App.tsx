@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import FlowingMenu from './components/FlowingMenu';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
